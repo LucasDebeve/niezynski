@@ -1,0 +1,25 @@
+{
+    "defaultReponse": "Pas loin, mais tu n'as pas trouvé la bonne réponse !",
+    "possibilities": [
+        {
+            "keywords": ["jo", "josephine", "copine", "meuf", "la j", "le j"],
+            "response": "🦆 CANARD ! 🦆"
+        },
+        {
+            "keywords": ["mateo", "moi", "moi-même", "me"],
+            "response": "Sale égoïste !"
+        }, 
+        {
+            "keywords": ["lucas", "toi", "toi-même", "you", "debeve"],
+            "response": "Bonne réponse !"
+        },
+        {
+            "keywords": ["papa", "pere", "herve", "padre", "daron", "maman", "mere", "laeticia", "madre"],
+            "response": "👨‍👩‍👧‍👦 La famille c'est important, mais il y a celle par défaut et celle que l'on choisit 👨‍👩‍👧‍👦" 
+        },
+        {
+            "keywords": ["frere", "sacha", "soeur", "sister", "brother", "sœur", "zelia"],
+            "response": "Arrête de mytho, t'as pas de famille !" 
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background-image: url("img/background.jpg");
+    /* align image to bottom */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* shake animation */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    95% { transform: translate(1px, -2px) rotate(-1deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+/* shake animation */
+.error {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+/* loop rotation animation */
+@keyframes loop_rotate {
+    0% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg); }
+}
+
+.loop_shake {
+    /* funny curve */
+    animation: loop_rotate 2s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.chad {
+    filter: brightness(1) contrast(1) grayscale(0);
+    transition: all 0.3s ease;
+}
+
+.chad:hover, .chad:focus, .chad:active {
+    filter: brightness(1.2) contrast(3) grayscale(1);
+    height: 70svw;
+}
